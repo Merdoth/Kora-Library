@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+    <link rel="icon" href="assets/logo.svg" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="css/style.css" type="text/css" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+		/>
+		<title>Kora Library</title>
+	</head>
+	<body>
+		<!-- Header Section Start -->
+		<header class="header">
+			<div class="row justify-content-between align-items-center">
+        <button class="header-hamburger openbtn" onclick="openNav()">
+          <span></span>
+        </button>
+				<div class="header-logo row justify-content-between align-items-center">
+					<img src="assets/logo.svg" alt="Kora Library Logo" />
+					<h2 data-title="korapay book club">admin</h2>
+				</div>
+
+        <div class="search-container">
+          <div class="header-search">
+            <input
+              placeholder="Search books, genres, authors, etc."
+              type="text"
+            />
+            <button><img src="assets/search-icon.svg" alt="Search" /></button>
+          </div>
+
+          <div class="search-autocom" id="autocom">
+            <div class="row align-items-center autocom-search-mobile">
+              <button class="arrow closebtn" onclick="closeNav()">
+                <img src="assets/arrow.svg" alt="Go Back" />
+              </button>
+
+            <div class="mobile-search-container">
+              <input
+              placeholder="Search"
+              type="text"
+            />
+            <button><img src="assets/search-icon.svg" alt="Search" /></button>
+            </div>
+            </div>
+
+            <span class="row align-items-center">
+              <p>Big Magic </p><p> - Elizabeth Gilbert</p>
+            </span>
+            <span class="row align-items-center">
+              <p>Effective Python </p><p> - Diomidis Spinellis</p>
+            </span>
+            <span class="row align-items-center">
+              <p>Built To Last </p><p> - Jim Collins, Jerry I. Porras</p>
+            </span>
+            <span class="row align-items-center">
+              <p>The Lean Startup </p><p> - Eric Reis</p>
+            </span>
+            <span class="row align-items-center">
+              <p>The Effective Engineer </p><p> - Edmond Lau</p>
+            </span>
+            <span class="row align-items-center">
+              <p>No Excuses </p><p> - Brian Tracy</p>
+            </span>
+          </div>
+        </div>
+
+				<div class="header-avatar">
+					<a href="#"><img src="assets/books icon.svg" alt="Books Icon" /></a>
+					<a href="#"
+						><img src="assets/badged notify icon.svg" alt="Notification Icon"
+					/></a>
+					<a href="#"
+						><img class="user-avatar" src="assets/diner.jpg" alt="User Avatar"
+					/></a>
+				</div>
+			</div>
+		</header>
+		<!-- Header Section End -->
+
+		<div class="container">
+			<!-- Sidebar Section Start -->
+			<section class="sidebar-section sidebar-mobile" id="sidebar">
+        <div class="sidebar-mobile-header">
+          <button class="arrow closebtn" onclick="closeNav()">
+            <img src="assets/arrow.svg" alt="Go Back" />
+          </button>
+        <div class="header-logo row align-items-center">
+					<img src="assets/logo.svg" alt="Kora Library Logo" />
+					<h2 data-title="korapay book club">admin</h2>
+				</div>
+      </div>
+
+				<div class="sidebar-items home">
+					<a class="active">Home</a>
+					<a>Profile</a>
+					<div class="item">
+						<a>Notifications</a>
+						<p>3</p>
+					</div>
+				</div>
+
+				<div class="sidebar-items explore">
+					<h3>Explore</h3>
+					<div class="item">
+						<a>Books</a>
+						<p>273</p>
+					</div>
+					<div class="item">
+						<a>Genres</a>
+						<p>42</p>
+					</div>
+					<div class="item">
+						<a>Authors</a>
+						<p>106</p>
+					</div>
+				</div>
+
+				<div class="sidebar-items my-books">
+					<h3>My Books</h3>
+					<div class="item">
+						<a>Queued</a>
+						<p>3</p>
+					</div>
+					<div class="item">
+						<a>Currently Borrowed</a>
+						<p>0</p>
+					</div>
+					<div class="item">
+						<a>Favourites</a>
+						<p>19</p>
+					</div>
+					<a>History</a>
+				</div>
+
+				<div class="sidebar-items admin">
+					<h3>Admin</h3>
+					<div class="item admin-item">
+						<a>Book Requests</a>
+						<p>2</p>
+					</div>
+					<div class="item">
+						<a>Members</a>
+						<p>42</p>
+					</div>
+					<a>Library Settings</a>
+				</div>
+			</section>
+			<!-- Sidebar Section End -->
+
+			<!-- Content Section Start -->
+			<section class="content-section">
+				<div class="featured-content">
+					<div class="wrapper content-title">
+						<h3>Featured books</h3>
+					</div>
+
+					<!-- Carousel Section Start -->
+					<div
+						class="main-carousel"
+						data-flickity='{"wrapAround": true, "imagesLoaded": true, "freeScroll": true,
+    "percentPosition": false }'
+					>
+						<div class="carousel-cell">
+              <div class="carousel-overlay overlay-mobile"></div>
+              <button class="carousel-mobile">
+                <span>
+              </button>
+							<img class="carousel-cell-image" src="assets/book-cover.png" />
+							
+              <div class="carousel-overlay-details overlay-mobile-details">
+                <div class="overlay-close">
+                  <span>
+                </div>
+                <div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>Big Magic</h3>
+									<p class="content-text2">Elizabeth Gilbert - 2014</p>
+									<p class="content-text3"><b>Genre:</b> Motivational</p>
+									<p class="content-text3"><b>Labels:</b> Creative, Self-help</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p class="content-text3"><b>Ratings:</b> 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group-white.svg" alt="Number of Readers" />
+												<p class="content-text3">31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart-white.svg" alt="Favourites" />
+												<p class="content-text3">29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+              </div>
+						</div>
+
+						<div class="carousel-cell">
+              <div class="carousel-overlay overlay-mobile"></div>
+              <button class="carousel-mobile">
+                <span>
+              </button>
+							<img
+								class="carousel-cell-image"
+								src="assets/effective python.png"
+							/>
+              <div class="carousel-overlay-details overlay-mobile-details">
+                <div class="overlay-close">
+                  <span>
+                </div>
+                <div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>Effective Python</h3>
+									<p class="content-text2">Diomidis Spinellis</p>
+									<p class="content-text3"><b>Genre:</b> Motivational</p>
+									<p class="content-text3"><b>Labels:</b> Creative, Self-help</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p class="content-text3"><b>Ratings:</b> 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group-white.svg" alt="Number of Readers" />
+												<p class="content-text3">31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart-white.svg" alt="Favourites" />
+												<p class="content-text3">29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+              </div>
+						</div>
+            
+						<div class="carousel-cell">
+              <div class="carousel-overlay overlay-mobile"></div>
+              <button class="carousel-mobile">
+                <span>
+              </button>
+							<img class="carousel-cell-image" src="assets/built to last.png" />
+
+              <div class="carousel-overlay-details overlay-mobile-details">
+                <div class="overlay-close">
+                  <span>
+                </div>
+                <div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>Built To Last</h3>
+									<p class="content-text2">Jim Collins, Jerry I. Porras - 2001</p>
+									<p class="content-text3"><b>Genre:</b> Business</p>
+									<p class="content-text3"><b>Labels:</b> Entrepreneurship</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p class="content-text3"><b>Ratings:</b> 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group-white.svg" alt="Number of Readers" />
+												<p class="content-text3">31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart-white.svg" alt="Favourites" />
+												<p class="content-text3">29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+              </div>
+						</div>
+
+						<div class="carousel-cell">
+              <div class="carousel-overlay overlay-mobile"></div>
+              <button class="carousel-mobile">
+                <span>
+              </button>
+							<img
+								class="carousel-cell-image"
+								src="assets/the lean startup.png"
+							/>
+							
+              <div class="carousel-overlay-details overlay-mobile-details">
+                <div class="overlay-close">
+                  <span>
+                </div>
+                <div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>The Lean Startup</h3>
+									<p class="content-text2">Eric Reis - 2005</p>
+									<p class="content-text3"><b>Genre:</b> Motivational</p>
+									<p class="content-text3"><b>Labels:</b> Creative, Self-help</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p class="content-text3"><b>Ratings:</b> 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group-white.svg" alt="Number of Readers" />
+												<p class="content-text3">31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart-white.svg" alt="Favourites" />
+												<p class="content-text3">29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+              </div>
+						</div>
+
+						<div class="carousel-cell">
+              <div class="carousel-overlay overlay-mobile"></div>
+              <button class="carousel-mobile">
+                <span>
+              </button>
+							<img
+								class="carousel-cell-image"
+								src="assets/effective engineer (1).png"
+							/>
+              <div class="carousel-overlay-details overlay-mobile-details">
+                <div class="overlay-close">
+                  <span>
+                </div>
+                <div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>The Effective Engineer</h3>
+									<p class="content-text2">Edmond Lau - 2009</p>
+									<p class="content-text3"><b>Genre:</b> Motivational</p>
+									<p class="content-text3"><b>Labels:</b> Creative, Self-help</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p class="content-text3"><b>Ratings:</b> 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group-white.svg" alt="Number of Readers" />
+												<p class="content-text3">31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart-white.svg" alt="Favourites" />
+												<p class="content-text3">29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+              </div>
+						</div>
+
+						<div class="carousel-cell">
+              <div class="carousel-overlay overlay-mobile"></div>
+              <button class="carousel-mobile">
+                <span>
+              </button>
+							<img class="carousel-cell-image" src="assets/book-cover.png" />
+
+              <div class="carousel-overlay-details overlay-mobile-details">
+                <div class="overlay-close">
+                  <span>
+                </div>
+                <div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>Big Magic</h3>
+									<p class="content-text2">Elizabeth Gilbert - 2014</p>
+									<p class="content-text3"><b>Genre:</b> Motivational</p>
+									<p class="content-text3"><b>Labels:</b> Creative, Self-help</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p class="content-text3"><b>Ratings:</b> 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group-white.svg" alt="Number of Readers" />
+												<p class="content-text3">31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart-white.svg" alt="Favourites" />
+												<p class="content-text3">29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+              </div>
+						</div>
+
+						<div class="carousel-cell">
+              <div class="carousel-overlay overlay-mobile"></div>
+              <button class="carousel-mobile">
+                <span>
+              </button>
+							<img
+								class="carousel-cell-image"
+								src="assets/effective python.png"
+							/>
+              <div class="carousel-overlay-details overlay-mobile-details">
+                <div class="overlay-close">
+                  <span>
+                </div>
+                <div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>Effective Python</h3>
+									<p class="content-text2">Diomidis Spinellis9</p>
+									<p class="content-text3"><b>Genre:</b> Motivational</p>
+									<p class="content-text3"><b>Labels:</b> Creative, Self-help</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p class="content-text3"><b>Ratings:</b> 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group-white.svg" alt="Number of Readers" />
+												<p class="content-text3">31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart-white.svg" alt="Favourites" />
+												<p class="content-text3">29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+              </div>
+						</div>
+
+						<div class="carousel-cell">
+              <div class="carousel-overlay overlay-mobile"></div>
+              <button class="carousel-mobile">
+                <span>
+              </button>
+							<img class="carousel-cell-image" src="assets/built to last.png" />
+						
+              <div class="carousel-overlay-details overlay-mobile-details">
+                <div class="overlay-close">
+                  <span>
+                </div>
+                <div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>Built To Last</h3>
+									<p class="content-text2">Jim Collins, Jerry I. Porras - 2001</p>
+									<p class="content-text3"><b>Genre:</b> Business</p>
+									<p class="content-text3"><b>Labels:</b> Entrepreneurship</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p class="content-text3"><b>Ratings:</b> 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group-white.svg" alt="Number of Readers" />
+												<p class="content-text3">31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart-white.svg" alt="Favourites" />
+												<p class="content-text3">29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+              </div>
+						</div>
+
+						<div class="carousel-cell">
+              <div class="carousel-overlay overlay-mobile"></div>
+              <button class="carousel-mobile">
+                <span>
+              </button>
+							<img
+								class="carousel-cell-image"
+								src="assets/the lean startup.png"
+							/>
+							
+              <div class="carousel-overlay-details overlay-mobile-details">
+                <div class="overlay-close">
+                  <span>
+                </div>
+                <div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>The Lean Startup</h3>
+									<p class="content-text2">Eric Reis - 2005</p>
+									<p class="content-text3"><b>Genre:</b> Motivational</p>
+									<p class="content-text3"><b>Labels:</b> Creative, Self-help</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p class="content-text3"><b>Ratings:</b> 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group-white.svg" alt="Number of Readers" />
+												<p class="content-text3">31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart-white.svg" alt="Favourites" />
+												<p class="content-text3">29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+              </div>
+						</div>
+
+						<div class="carousel-cell">
+              <div class="carousel-overlay overlay-mobile"></div>
+              <button class="carousel-mobile">
+                <span>
+              </button>
+							<img
+								class="carousel-cell-image"
+								src="assets/effective engineer (1).png"
+							/>
+							
+              <div class="carousel-overlay-details overlay-mobile-details">
+                <div class="overlay-close">
+                  <span>
+                </div>
+                <div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>The Effective Engineer</h3>
+									<p class="content-text2">Edmond Lau - 2009</p>
+									<p class="content-text3"><b>Genre:</b> Motivational</p>
+									<p class="content-text3"><b>Labels:</b> Creative, Self-help</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p class="content-text3"><b>Ratings:</b> 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group-white.svg" alt="Number of Readers" />
+												<p class="content-text3">31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart-white.svg" alt="Favourites" />
+												<p class="content-text3">29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+              </div>
+						</div>
+					</div>
+					<!-- Carousel Section End -->
+				</div>
+
+				<!-- Recent Books Section Start -->
+				<section class="recent-content sec-padding">
+					<div class="wrapper">
+						<div class="content-title">
+							<h3>Recently Added</h3>
+						</div>
+
+						<div class="row justify-content-between">
+							<div class="content-items">
+								<div class="content-image">
+									<img
+										src="assets/effective engineer (1).png"
+										alt="Library Book"
+									/>
+								</div>
+								<div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>The Effective Engineer</h3>
+									<p>Edmond Lau - 2009</p>
+									<p>Motivational</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p>Ratings: 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="hr"></div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group.svg" alt="Number of Readers" />
+												<p>31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart.svg" alt="Favourites" />
+												<p>29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="content-items">
+								<div class="content-image">
+									<img src="assets/built to last.png" alt="Library Book" />
+								</div>
+								<div class="content-text">
+									<p class="content-text1 red">Borrowed Out</p>
+									<h3>Built To Last</h3>
+									<p>Jim Collins, Jerry I. Porras - 2001</p>
+									<p>Business, Entrepreneurship</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p>Ratings: 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="hr"></div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group.svg" alt="Number of Readers" />
+												<p>31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart.svg" alt="Favourites" />
+												<p>29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="content-items">
+								<div class="content-image">
+									<img src="assets/the lean startup.png" alt="Library Book" />
+								</div>
+								<div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>The Lean Startup</h3>
+									<p>Eric Reis - 2005</p>
+									<p>Motivational</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p>Ratings: 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="hr"></div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group.svg" alt="Number of Readers" />
+												<p>31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart.svg" alt="Favourites" />
+												<p>29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="content-items">
+								<div class="content-image">
+									<img src="assets/effective python.png" alt="Library Book" />
+								</div>
+								<div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>Effective Python</h3>
+									<p>Diomidis Spinellis</p>
+									<p>Motivational</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p>Ratings: 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="hr"></div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group.svg" alt="Number of Readers" />
+												<p>31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart.svg" alt="Favourites" />
+												<p>29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="content-items">
+								<div class="content-image">
+									<img src="assets/book-cover.png" alt="Library Book" />
+								</div>
+								<div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>Big Magic</h3>
+									<p>Elizabeth Gilbert - 2014</p>
+									<p>Motivational</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p>Ratings: 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="hr"></div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group.svg" alt="Number of Readers" />
+												<p>31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart.svg" alt="Favourites" />
+												<p>29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="content-items">
+								<div class="content-image">
+									<img src="assets/book-cover.png" alt="Library Book" />
+								</div>
+								<div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>Big Magic</h3>
+									<p>Elizabeth Gilbert - 2014</p>
+									<p>Motivational</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p>Ratings: 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="hr"></div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group.svg" alt="Number of Readers" />
+												<p>31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart.svg" alt="Favourites" />
+												<p>29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Recent Books Section End -->
+
+				<!-- All Books Section Start -->
+				<section class="all-content">
+					<div class="wrapper">
+						<div class="content-title">
+							<h3>All books</h3>
+						</div>
+
+						<div class="row justify-content-between">
+							<div class="content-items">
+								<div class="content-image">
+									<img
+										src="assets/effective engineer (1).png"
+										alt="Library Book"
+									/>
+								</div>
+								<div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>The Effective Engineer</h3>
+									<p>Edmond Lau - 2009</p>
+									<p>Motivational</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p>Ratings: 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="hr"></div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group.svg" alt="Number of Readers" />
+												<p>31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart.svg" alt="Favourites" />
+												<p>29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="content-items">
+								<div class="content-image">
+									<img src="assets/built to last.png" alt="Library Book" />
+								</div>
+								<div class="content-text">
+									<p class="content-text1 red">Borrowed Out</p>
+									<h3>Built To Last</h3>
+									<p>Jim Collins, Jerry I. Porras - 2001</p>
+									<p>Business, Entrepreneurship</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p>Ratings: 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="hr"></div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group.svg" alt="Number of Readers" />
+												<p>31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart.svg" alt="Favourites" />
+												<p>29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="content-items">
+								<div class="content-image">
+									<img src="assets/the lean startup.png" alt="Library Book" />
+								</div>
+								<div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>The Lean Startup</h3>
+									<p>Eric Reis - 2005</p>
+									<p>Motivational</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p>Ratings: 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="hr"></div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group.svg" alt="Number of Readers" />
+												<p>31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart.svg" alt="Favourites" />
+												<p>29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="content-items">
+								<div class="content-image">
+									<img src="assets/effective python.png" alt="Library Book" />
+								</div>
+								<div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>Effective Python</h3>
+									<p>Diomidis Spinellis</p>
+									<p>Motivational</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p>Ratings: 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="hr"></div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group.svg" alt="Number of Readers" />
+												<p>31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart.svg" alt="Favourites" />
+												<p>29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="content-items">
+								<div class="content-image">
+									<img src="assets/book-cover.png" alt="Library Book" />
+								</div>
+								<div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>Big Magic</h3>
+									<p>Elizabeth Gilbert - 2014</p>
+									<p>Motivational</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p>Ratings: 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="hr"></div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group.svg" alt="Number of Readers" />
+												<p>31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart.svg" alt="Favourites" />
+												<p>29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="content-items">
+								<div class="content-image">
+									<img
+										src="assets/effective engineer (1).png"
+										alt="Library Book"
+									/>
+								</div>
+								<div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>The Effective Engineer</h3>
+									<p>Edmond Lau - 2009</p>
+									<p>Motivational</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p>Ratings: 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="hr"></div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group.svg" alt="Number of Readers" />
+												<p>31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart.svg" alt="Favourites" />
+												<p>29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="content-items">
+								<div class="content-image">
+									<img src="assets/built to last.png" alt="Library Book" />
+								</div>
+								<div class="content-text">
+									<p class="content-text1 red">Borrowed Out</p>
+									<h3>Built To Last</h3>
+									<p>Jim Collins, Jerry I. Porras - 2001</p>
+									<p>Business, Entrepreneurship</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p>Ratings: 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="hr"></div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group.svg" alt="Number of Readers" />
+												<p>31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart.svg" alt="Favourites" />
+												<p>29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="content-items">
+								<div class="content-image">
+									<img src="assets/the lean startup.png" alt="Library Book" />
+								</div>
+								<div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>The Lean Startup</h3>
+									<p>Eric Reis - 2005</p>
+									<p>Motivational</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p>Ratings: 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="hr"></div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group.svg" alt="Number of Readers" />
+												<p>31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart.svg" alt="Favourites" />
+												<p>29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="content-items">
+								<div class="content-image">
+									<img src="assets/effective python.png" alt="Library Book" />
+								</div>
+								<div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>Effective Python</h3>
+									<p>Diomidis Spinellis</p>
+									<p>Motivational</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p>Ratings: 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="hr"></div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group.svg" alt="Number of Readers" />
+												<p>31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart.svg" alt="Favourites" />
+												<p>29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="content-items">
+								<div class="content-image">
+									<img src="assets/book-cover.png" alt="Library Book" />
+								</div>
+								<div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>Big Magic</h3>
+									<p>Elizabeth Gilbert - 2014</p>
+									<p>Motivational</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p>Ratings: 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="hr"></div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group.svg" alt="Number of Readers" />
+												<p>31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart.svg" alt="Favourites" />
+												<p>29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="content-items">
+								<div class="content-image">
+									<img src="assets/the lean startup.png" alt="Library Book" />
+								</div>
+								<div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>The Lean Startup</h3>
+									<p>Eric Reis - 2005</p>
+									<p>Motivational</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p>Ratings: 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="hr"></div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group.svg" alt="Number of Readers" />
+												<p>31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart.svg" alt="Favourites" />
+												<p>29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="content-items">
+								<div class="content-image">
+									<img src="assets/effective python.png" alt="Library Book" />
+								</div>
+								<div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>Effective Python</h3>
+									<p>Diomidis Spinellis</p>
+									<p>Motivational</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p>Ratings: 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="hr"></div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group.svg" alt="Number of Readers" />
+												<p>31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart.svg" alt="Favourites" />
+												<p>29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="content-items">
+								<div class="content-image">
+									<img src="assets/book-cover.png" alt="Library Book" />
+								</div>
+								<div class="content-text">
+									<p class="content-text1">Available</p>
+									<h3>Big Magic</h3>
+									<p>Elizabeth Gilbert - 2014</p>
+									<p>Motivational</p>
+
+									<div class="row content-ratings">
+										<div class="ratings-item initial">
+											<p>Ratings: 4.0</p>
+											<div class="ratings-star">
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+												<div></div>
+											</div>
+										</div>
+
+										<div class="hr"></div>
+
+										<div class="favourite-item">
+											<div class="group">
+												<img src="assets/group.svg" alt="Number of Readers" />
+												<p>31</p>
+											</div>
+											<div class="heart">
+												<img src="assets/heart.svg" alt="Favourites" />
+												<p>29</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- All Books Section End -->
+			</section>
+			<!-- Content Section End -->
+		</div>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
